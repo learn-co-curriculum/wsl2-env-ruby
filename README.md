@@ -42,7 +42,7 @@ can quickly install Ruby with a couple of commands.
 1. Open the "Ubuntu" application using the "Start" menu
 2. If the "Ubuntu" application is still open from the last step, close and
    re-open to prevent errors with running the next command.
-3. Type `rvm install 2.6.1` and press `<Enter>`
+3. Type `rvm install "ruby-2.6.1"` and press `<Enter>`
 4. Type `rvm list` and press `<Enter>`
 
 ### Check Your Work
