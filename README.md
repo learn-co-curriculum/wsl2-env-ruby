@@ -55,6 +55,26 @@ If you see a message starting with `=* ruby-2.6.1`, continue below.
 > `=*` before it, close and reopen the "Ubuntu" application, then run
 > `rvm use 2.6.1 --default`.
 
+## Troubleshooting Ruby Installs
+
+If you encounter issues installing a version of Ruby via RVM, try the following
+in Ubuntu:
+
+- Run `rvm group add rvm $USER`
+- Close Ubuntu and reopen
+- Run `rvm fix-permissions`
+
+After running the last command, try installing Ruby again with
+`rvm install 2.6.1 --default`
+
+If you are continuing to have issues installing RVM, try running the following:
+
+```console
+$ sudo usermod -a -G rvm $USER
+```
+
+After running, try installing Ruby again.
+
 ## Install Ruby Gems on Ubuntu
 
 Ruby Gems are small programs written in Ruby that help you to code more easily
